@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Pure JavaScript Excel
+        link(rel="shortcut icon" href="favicon.ico")
+        link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+
+    body
+        #app
+            .dashboard
+                .dashboard__header
+                    h1 Excel Dashboard
+                .dashboard__new
+                    .dashboard__view
+                        a.dashboard__create(href="#") Новая
+                            br
+                            | таблица
+                .dashboard__table.dashboard__view
+                    .dashboard__list-header
+                        span Название
+                        span Дата открытия
+                    ul.dashboard__list
+                        li.dashboard__record
+                            a(href="#") Таблица номер 1
+                            strong 12.06.2020
+                        li.dashboard__record
+                            a(href="#") Таблица номер 2
+                            strong 23.06.2020
+
